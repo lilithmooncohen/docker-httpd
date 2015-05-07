@@ -61,5 +61,7 @@ RUN buildDeps=' \
 
 COPY httpd-foreground /usr/local/bin/
 
+RUN chmod +x /usr/local/bin/httpd-foreground
+
 EXPOSE 80
 CMD ["/usr/local/bin/httpd-foreground"]
